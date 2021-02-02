@@ -1,0 +1,42 @@
+> Accessories > Terminal), and then type:
+# chkconfig nfslock off
+# chkconfig rpcgssd off
+# chkconfig rpcidmapd off
+# chkconfig portmap off
+# chkconfig nfs off
+
+Delete nfs-utils and portmap packages using the yum command:
+# yum remove portmap nfs-utils
+
+
+yum localinstall Downloads/google-chrome-stable_current_x86_64.rpm 
+yum localinstall Downloads/code-1.52.1-1608137084.el7.x86_64.rpm
+
+yum install python3
+
+yum install \
+https://repo.ius.io/ius-release-el7.rpm \
+https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+
+yum erase -y git*
+yum install  git-core
+
+yum install Downloads/gh_1.5.0_linux_amd64.rpm 
+
+doxygen  dox.config
+
+firefox doxy/html/index.html 
+
+git clone https://github.com/stm-dell/ECS-CommunityEdition
+
+usermod -aG wheel muells
+
+hostnamectl set-hostname stm-ecs-5.stm.local
+
+docker ps
+
+docker logs 66466
+
+
+
+
